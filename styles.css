@@ -53,11 +53,31 @@ body {
     margin: 0 auto 1rem;
     border-radius: 50%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+}
+
+    .profile-img img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        border-radius: 50%;
+    }
+
+/*.profile-img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    overflow: hidden;
     background: linear-gradient(45deg, #3498db, #2ecc71);
     display: flex;
     align-items: center;
     justify-content: center;
-}
+}*/
 
 .profile-placeholder {
     color: white;
@@ -996,3 +1016,150 @@ body {
         height: 100%;
         object-fit: contain; /* Fits entire video inside */
     }
+
+/* ===== INFO HOVER SYSTEM ===== */
+
+/* Info Button */
+.info-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+    .info-btn:hover {
+        background: var(--primary-color);
+        color: white;
+        transform: scale(1.1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+/* Info Overlay */
+.info-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    color: white;
+    display: none;
+    z-index: 15;
+    padding: 20px;
+    overflow-y: auto;
+    animation: fadeIn 0.3s ease;
+}
+
+    .info-overlay.active {
+        display: block;
+    }
+
+.overlay-content {
+    position: relative;
+    max-width: 100%;
+}
+
+.close-overlay {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: white;
+    color: black;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    transition: all 0.3s ease;
+}
+
+    .close-overlay:hover {
+        background: var(--primary-color);
+        color: white;
+        transform: scale(1.1);
+    }
+
+.overlay-content h3 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.overlay-section {
+    margin-bottom: 1.5rem;
+}
+
+    .overlay-section h4 {
+        color: var(--secondary-color);
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .overlay-section ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .overlay-section li {
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: flex-start;
+    }
+
+        .overlay-section li:before {
+            content: "▸";
+            color: var(--secondary-color);
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+    .overlay-section p {
+        line-height: 1.6;
+        color: #ddd;
+    }
+
+.tech-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.tech-badge {
+    background: rgba(52, 152, 219, 0.2);
+    color: var(--secondary-color);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(52, 152, 219, 0.3);
+}
+
+/* Project card needs relative positioning */
+.project-card {
+    position: relative;
+    overflow: hidden;
+}

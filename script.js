@@ -297,4 +297,63 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     });
+
+    // ===== INFO OVERLAY SYSTEM =====
+
+    // Open overlay when info button clicked
+    document.querySelectorAll('.info-btn').forEach(button => {
+        button.addEventListener('click', function (e) {
+            e.stopPropagation(); // Prevent card click
+
+            const projectId = this.getAttribute('data-project');
+            const overlay = document.getElementById(`overlay-${projectId}`);
+
+            // Close any other open overlays
+            document.querySelectorAll('.info-overlay').forEach(ov => {
+                ov.classList.remove('active');
+            });
+
+            // Open this overlay
+            overlay.classList.add('active');
+        });
+    });
+
+    // Close overlay when X clicked
+    document.querySelectorAll('.close-overlay').forEach(button => {
+        button.addEventListener('click', function (e) {
+            e.stopPropagation();
+            this.closest('.info-overlay').classList.remove('active');
+        });
+    });
+
+    // Close overlay when clicking outside
+    document.addEventListener('click', function (e) {
+        if (!e.target.closest('.info-overlay') &&
+            !e.target.closest('.info-btn')) {
+            document.querySelectorAll('.info-overlay').forEach(overlay => {
+                overlay.classList.remove('active');
+            });
+        }
+    });
+
+    // Close overlay with Escape key
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+            document.querySelectorAll('.info-overlay').forEach(overlay => {
+                overlay.classList.remove('active');
+            });
+        }
+    });
+
+    // Pause video when overlay closes
+    document.querySelectorAll('.info-overlay').forEach(overlay => {
+        overlay.addEventListener('transitionend', function () {
+            if (!this.classList.contains('active')) {
+                const video = this.closest('.project-card').querySelector('video');
+                if (video && !video.paused) {
+                    video.pause();
+                }
+            }
+        });
+    });
 });
