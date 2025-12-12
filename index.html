@@ -3,68 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajat Shrivastav | Portfolio</title>
+    <title>Rajat Shrivastav | Unity Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Sidebar Navigation -->
-    <nav class="sidebar">
-        <div class="sidebar-content">
-            <div class="profile">
-                <div class="profile-img">
-                    <img src="assets/profile.jpeg" alt="Rajat Shrivastav">
-                </div>
-                <h1 class="name">Rajat Shrivastav</h1>
-                <p class="title">Unity Developer</p>
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <div class="container">
+            <div class="nav-left">
+                <h1 class="logo">Rajat Shrivastav</h1>
             </div>
-
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-item active"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#about" class="nav-item"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="#skills" class="nav-item"><i class="fas fa-code"></i> Skills</a></li>
-                <li><a href="#projects" class="nav-item"><i class="fas fa-laptop-code"></i> Projects</a></li>
-                <!--<li><a href="#videos" class="nav-item"><i class="fas fa-video"></i> Project Videos</a></li>-->
-                <!--<li><a href="#gallery" class="nav-item"><i class="fas fa-images"></i> Project Gallery</a></li>-->
-                <li><a href="#contact" class="nav-item"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-
-            <div class="social-links">
-                <!--<a href="#" target="_blank"><i class="fab fa-github"></i></a>-->
-                <a href="https://www.linkedin.com/in/shrivastav-rajat-sunilkumar-5850551b8/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <!--<a href="#" target="_blank"><i class="fab fa-youtube"></i></a>-->
-                <a href="mailto:vikramshrivastav999@gmail.com"><i class="fas fa-envelope"></i></a>
-            </div>
-
-            <div class="copyright">
-                <p>&copy; <span id="current-year">2025</span> Rajat Shrivastav</p>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-item active">Home</a></li>
+                    <li><a href="#about" class="nav-item">About</a></li>
+                    <li><a href="#skills" class="nav-item">Skills</a></li>
+                    <li><a href="#projects" class="nav-item">Projects</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
     <!-- Main Content -->
     <main class="main-content">
-        <!-- Home Section -->
-        <section id="home" class="section active">
+        <!-- Home/Hero Section -->
+        <section id="home" class="section hero-section">
             <div class="container">
-                <h2 class="section-title">Hello, I'm <span class="highlight">Rajat Shrivastav</span></h2>
-                <p class="section-subtitle">Unity Developer & Programmer</p>
-                <p class="description">
-                    I create immersive gaming experiences and develop innovative projects.
-                    Explore my work through code, videos, and screenshots.
-                </p>
-                <a href="#projects" class="btn">View My Projects</a>
-                <a href="#videos" class="btn btn-outline">Watch Videos</a>
+                <div class="hero-container">
+                    <div class="hero-left">
+                        <h2 class="hero-greeting">Hello, I'm</h2>
+                        <h1 class="hero-name">Rajat Shrivastav</h1>
+                        <h3 class="hero-title">Unity Game Developer & Programmer</h3>
+                        <p class="hero-tagline">Creating immersive gaming experiences and innovative interactive projects.</p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">8+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Games Developed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Client Satisfaction</span>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <a href="#projects" class="btn btn-primary">View My Projects</a>
+                            <a href="#contact" class="btn btn-outline">Contact Me</a>
+                        </div>
+                    </div>
+                    <div class="hero-right">
+                        <div class="profile-image-container">
+                            <img src="assets/profile.jpeg" alt="Rajat Shrivastav" class="profile-image">
+                            <div class="image-frame"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="section">
+        <section id="about" class="section about-section">
             <div class="container">
                 <h2 class="section-title">About Me</h2>
                 <div class="about-content">
-                    <p>Hello! I'm a passionate game developer with expertise in creating interactive experiences.</p>
+                    <p class="about-description">Hello! I'm a passionate game developer with expertise in creating interactive experiences. I specialize in Unity development for mobile, web, and desktop platforms.</p>
                     <div class="info-grid">
                         <div class="info-item">
                             <strong>Name:</strong>
@@ -72,15 +80,23 @@
                         </div>
                         <div class="info-item">
                             <strong>Email:</strong>
-                            <span>vikramshrivastav999@gmail.com</span>
+                            <span class="email-text">vikramshrivastav999@gmail.com</span>
                         </div>
                         <div class="info-item">
                             <strong>Location:</strong>
-                            <span>Surat-Gujarat ,India</span>
+                            <span>Surat, Gujarat, India</span>
                         </div>
                         <div class="info-item">
                             <strong>Education:</strong>
                             <span>BE in Computer Engineering</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Experience:</strong>
+                            <span>5+ Years in Game Development</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Specialization:</strong>
+                            <span>Unity, Multiplayer, WebGL</span>
                         </div>
                     </div>
                 </div>
@@ -88,58 +104,74 @@
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="section">
+        <section id="skills" class="section skills-section">
             <div class="container">
-                <h2 class="section-title">Skills & Technologies</h2>
+                <h2 class="section-title">My Skills</h2>
+
                 <div class="skills-grid">
+                    <!-- Skill Category 1 -->
                     <div class="skill-category">
                         <h3>GAME DEVELOPMENT</h3>
-                        <ul class="skill-list">
-                            <li>Unity (2D & 3D)</li>
-                            <li>Multiplayer</li>
-                            <li>Game Optimization</li>
-                            <li>Unity WebGL Development</li>
-                            <li>Webgl Optimization</li>
-                        </ul>
+                        <div class="skill-items">
+                            <span class="skill-item">Unity (2D & 3D)</span>
+                            <span class="skill-item">Multiplayer</span>
+                            <span class="skill-item">Game Optimization</span>
+                            <span class="skill-item">Unity WebGL Development</span>
+                            <span class="skill-item">WebGL Optimization</span>
+                            <span class="skill-item">Mobile Games</span>
+                            <span class="skill-item">Game Design</span>
+                        </div>
                     </div>
+
+                    <!-- Skill Category 2 -->
                     <div class="skill-category">
                         <h3>PROGRAMMING & ARCHITECTURE</h3>
-                        <ul class="skill-list">
-                            <li>C#</li>
-                            <li>Data Structures</li>
-                            <li>SOLID Principles</li>
-                            <li>Design Patterns</li>
-                            <li>Architecture Patterns</li>
-                        </ul>
+                        <div class="skill-items">
+                            <span class="skill-item">C#</span>
+                            <span class="skill-item">Data Structures</span>
+                            <span class="skill-item">SOLID Principles</span>
+                            <span class="skill-item">Design Patterns</span>
+                            <span class="skill-item">Architecture Patterns</span>
+                        </div>
                     </div>
+
+                    <!-- Skill Category 3 -->
                     <div class="skill-category">
                         <h3>INTEGRATION & BACKEND</h3>
-                        <ul class="skill-list">
-                            <li>Web3 Integration using Metamask</li>
-                            <li>API Integration</li>
-                            <li>SDK Integration</li>
-                        </ul>
+                        <div class="skill-items">
+                            <span class="skill-item">Web3 Integration using Metamask</span>
+                            <span class="skill-item">API Integration</span>
+                            <span class="skill-item">SDK Integration</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Category 4 -->
+                    <div class="skill-category">
+                        <h3>SDKs & TOOLS</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">Reown SDK for web3</span>
+                            <span class="skill-item">Cesium for Unity</span>
+                            <span class="skill-item">SALSA (for Lip-Sync)</span>
+                            <span class="skill-item">Pollfish (Survey)</span>
+                            <span class="skill-item">Transcription & Voice Commands for WebGL (STT)</span>
+                        </div>
                     </div>
                     <div class="skill-category">
                         <h3>SDKs & TOOLS</h3>
-                        <ul class="skill-list">
-                            <li>Reown SDK for web3 (Meta mask integration for Desktop & Mobile(android/ios) browsers)</li>
-                            <li>Cesium for Unity (3D Maps, Geospatial Visualization Tools)</li>
-                            <li>SALSA (for Lip-Sync)</li>
-                            <li>Pollfish (Survey)</li>
-                            <li>Unity Addressables</li>
-                            <li>Microphone Pro</li>
-                            <li>CCD Management Tool(Auto Deploy Addressable Builds)</li>
-                            <li>Google Ads</li>
-                            <li>Google Play Services</li>
-                        </ul>
+                        <div class="skill-items">
+                            <span class="skill-item">Unity Addressables</span>
+                            <span class="skill-item">CCD Management Tool</span>
+                            <span class="skill-item">Google Ads</span>
+                            <span class="skill-item">Google Play Services</span>
+                            <span class="skill-item">Photon PUN2</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        
-    <!-- Projects Section -->
-        <section id="projects" class="section">
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
             <div class="container">
                 <h2 class="section-title">My Projects</h2>
                 <p class="section-subtitle">Game development projects with videos</p>
@@ -169,7 +201,6 @@
                                 </p>
                             </div>
                         </div>
-
 
                         <!-- Info Overlay (Hidden) -->
                         <div class="info-overlay" id="overlay-1">
@@ -248,7 +279,6 @@
                             </div>
                         </div>
 
-
                         <!-- Info Overlay (Hidden) -->
                         <div class="info-overlay" id="overlay-2">
                             <div class="overlay-content">
@@ -317,7 +347,6 @@
                             </div>
                         </div>
 
-
                         <!-- Info Overlay (Hidden) -->
                         <div class="info-overlay" id="overlay-3">
                             <div class="overlay-content">
@@ -329,7 +358,7 @@
                                         <h4>🧾 Overview</h4>
                                         <p>
                                             Fireball is a dynamic 2D bouncing ball game where
-                                            the player taps to alternate the ball’s direction
+                                            the player taps to alternate the ball's direction
                                             (left/right) to navigate through rings and avoid obstacles
                                             while progressing through levels.
                                         </p>
@@ -383,7 +412,6 @@
                                 </p>
                             </div>
                         </div>
-
 
                         <!-- Info Overlay (Hidden) -->
                         <div class="info-overlay" id="overlay-4">
@@ -452,7 +480,6 @@
                             </div>
                         </div>
 
-
                         <!-- Info Overlay (Hidden) -->
                         <div class="info-overlay" id="overlay-5">
                             <div class="overlay-content">
@@ -512,7 +539,6 @@
                             </div>
                         </div>
 
-
                         <!-- Info Overlay (Hidden) -->
                         <div class="info-overlay" id="overlay-6">
                             <div class="overlay-content">
@@ -568,7 +594,6 @@
                             </div>
                         </div>
 
-
                         <!-- Info Overlay (Hidden) -->
                         <div class="info-overlay" id="overlay-7">
                             <div class="overlay-content">
@@ -601,11 +626,6 @@
                         <div class="project-header">
                             <h3>ThisIsBlast [Android]</h3>
                         </div>
-                        <!-- Info Button (Top Right) -->
-                        <!--<button class="info-btn" data-project="8">
-                            <i class="fas fa-info-circle"></i>
-                        </button>-->
-
                         <!-- Video Player -->
                         <div class="video-player">
                             <video controls>
@@ -619,11 +639,6 @@
                         <div class="project-header">
                             <h3>ThirdPersonDemo [Android]</h3>
                         </div>
-                        <!-- Info Button (Top Right) -->
-                        <!--<button class="info-btn" data-project="9">
-                            <i class="fas fa-info-circle"></i>
-                        </button>-->
-
                         <!-- Video Player -->
                         <div class="video-player">
                             <video controls>
@@ -637,11 +652,6 @@
                         <div class="project-header">
                             <h3>SuperSlap [Android]</h3>
                         </div>
-                        <!-- Info Button (Top Right) -->
-                        <!--<button class="info-btn" data-project="10">
-                            <i class="fas fa-info-circle"></i>
-                        </button>-->
-
                         <!-- Video Player -->
                         <div class="video-player">
                             <video controls>
@@ -655,11 +665,6 @@
                         <div class="project-header">
                             <h3>TurboTracks [Android]</h3>
                         </div>
-                        <!-- Info Button (Top Right) -->
-                        <!--<button class="info-btn" data-project="11">
-                            <i class="fas fa-info-circle"></i>
-                        </button>-->
-
                         <!-- Video Player -->
                         <div class="video-player">
                             <video controls>
@@ -673,11 +678,6 @@
                         <div class="project-header">
                             <h3>CesiumDemo</h3>
                         </div>
-                        <!-- Info Button (Top Right) -->
-                        <!--<button class="info-btn" data-project="12">
-                            <i class="fas fa-info-circle"></i>
-                        </button>-->
-
                         <!-- Video Player -->
                         <div class="video-player">
                             <video controls>
@@ -691,11 +691,6 @@
                         <div class="project-header">
                             <h3>Ludo</h3>
                         </div>
-                        <!-- Info Button (Top Right) -->
-                       <!-- <button class="info-btn" data-project="13">
-                            <i class="fas fa-info-circle"></i>
-                        </button>-->
-
                         <!-- Video Player -->
                         <div class="video-player">
                             <video controls>
@@ -709,11 +704,6 @@
                         <div class="project-header">
                             <h3>BurgerStack3d</h3>
                         </div>
-                        <!-- Info Button (Top Right) -->
-                        <!--<button class="info-btn" data-project="14">
-                            <i class="fas fa-info-circle"></i>
-                        </button>-->
-
                         <!-- Video Player -->
                         <div class="video-player">
                             <video controls>
@@ -727,12 +717,6 @@
                         <div class="project-header">
                             <h3><span> ICB Verse Famous Hall (Mobile Browser Responsive + Reown SDK for Web3) </span></h3>
                         </div>
-
-                        <!-- Info Button (Top Right) -->
-                        <!--<button class="info-btn" data-project="15">
-                            <i class="fas fa-info-circle"></i>
-                        </button>-->
-
                         <!-- Video Player -->
                         <div class="video-player">
                             <video controls>
@@ -740,194 +724,64 @@
                             </video>
                         </div>
                     </div>
-                    <!-- Add more projects as needed -->
                 </div>
             </div>
         </section>
-        <!-- Project Gallery Section -->
-        <!--<section id="gallery" class="section">
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
             <div class="container">
-                <h2 class="section-title">Project Gallery</h2>
-                <p class="section-subtitle">Screenshots and visual assets from my projects</p>-->
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly hello!</p>
 
-                <!-- Gallery Filter -->
-                <!--<div class="gallery-filter">
-                    <button class="filter-btn active" data-filter="all">All Projects</button>
-                    <button class="filter-btn" data-filter="space">Space Adventure</button>
-                    <button class="filter-btn" data-filter="ai">AI Solver</button>
-                    <button class="filter-btn" data-filter="racing">Racing Game</button>
-                </div>-->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:vikramshrivastav999@gmail.com" class="contact-email">vikramshrivastav999@gmail.com</a>
+                        </div>
+                    </div>
 
-                <!-- Gallery Grid -->
-                <!--<div class="gallery-grid">-->
-                    <!-- Image 1 -->
-                    <!--<div class="gallery-item" data-category="space">
-                        <div class="gallery-img">
-                            <div class="img-placeholder-small">Space Adventure - Level 1</div>
-                            <div class="gallery-overlay">
-                                <button class="view-image" data-img="1">
-                                    <i class="fas fa-expand"></i>
-                                </button>
-                            </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <span class="contact-phone">+91 9033866661</span>
                         </div>
-                        <div class="gallery-caption">
-                            <h4>Main Menu Screen</h4>
-                            <p>Space Adventure - Character selection interface</p>
-                        </div>
-                    </div>-->
+                    </div>
 
-                    <!-- Image 2 -->
-                    <!--<div class="gallery-item" data-category="space">
-                        <div class="gallery-img">
-                            <div class="img-placeholder-small">Space Adventure - Combat</div>
-                            <div class="gallery-overlay">
-                                <button class="view-image" data-img="2">
-                                    <i class="fas fa-expand"></i>
-                                </button>
-                            </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <span class="contact-location">Surat, Gujarat, India</span>
                         </div>
-                        <div class="gallery-caption">
-                            <h4>Space Combat Scene</h4>
-                            <p>Real-time battle with enemy spaceships</p>
-                        </div>
-                    </div>-->
+                    </div>
 
-                    <!-- Image 3 -->
-                    <!--<div class="gallery-item" data-category="ai">
-                        <div class="gallery-img">
-                            <div class="img-placeholder-small">AI Training Visualization</div>
-                            <div class="gallery-overlay">
-                                <button class="view-image" data-img="3">
-                                    <i class="fas fa-expand"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="gallery-caption">
-                            <h4>Neural Network Training</h4>
-                            <p>AI learning patterns to solve puzzles</p>
-                        </div>
-                    </div>-->
-
-                    <!-- Image 4 -->
-                    <!--<div class="gallery-item" data-category="ai">
-                        <div class="gallery-img">
-                            <div class="img-placeholder-small">Puzzle Solution</div>
-                            <div class="gallery-overlay">
-                                <button class="view-image" data-img="4">
-                                    <i class="fas fa-expand"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="gallery-caption">
-                            <h4>Solved Puzzle State</h4>
-                            <p>AI successfully completes complex puzzle</p>
-                        </div>
-                    </div>-->
-
-                    <!-- Image 5 -->
-                    <!--<div class="gallery-item" data-category="racing">
-                        <div class="gallery-img">
-                            <div class="img-placeholder-small">Racing Track Design</div>
-                            <div class="gallery-overlay">
-                                <button class="view-image" data-img="5">
-                                    <i class="fas fa-expand"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="gallery-caption">
-                            <h4>Race Track Overview</h4>
-                            <p>Custom designed circuit with obstacles</p>
-                        </div>
-                    </div>-->
-
-                    <!-- Image 6 -->
-                    <!--<div class="gallery-item" data-category="racing">
-                        <div class="gallery-img">
-                            <div class="img-placeholder-small">Multiplayer Lobby</div>
-                            <div class="gallery-overlay">
-                                <button class="view-image" data-img="6">
-                                    <i class="fas fa-expand"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="gallery-caption">
-                            <h4>Player Lobby Interface</h4>
-                            <p>Multiplayer matchmaking and chat system</p>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/shrivastav-rajat-sunilkumar-5850551b8/" target="_blank" class="contact-linkedin">Connect with me</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>-->
 
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="contact-content">
-                    <p>Feel free to reach out to me for collaborations or just a friendly hello!</p>
-
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h3>Email</h3>
-                                <a href="mailto:vikramshrivastav999@gmail.com">vikramshrivastav999@gmail.com</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h3>Phone</h3>
-                                <span>+91 9033866661</span>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h3>Location</h3>
-                                <span>Surat Gujarat, India</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="social-links-main">
+                    <a href="https://www.linkedin.com/in/shrivastav-rajat-sunilkumar-5850551b8/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:vikramshrivastav999@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Video Modal -->
-    <div class="video-modal" id="videoModal">
-        <div class="modal-content">
-            <button class="close-modal">&times;</button>
-            <div class="video-container">
-                <iframe id="videoPlayer" width="100" height="100"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                </iframe>
-            </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year">2025</span> Rajat Shrivastav. All rights reserved.</p>
         </div>
-    </div>
-
-    <!-- Image Lightbox -->
-    <div class="lightbox" id="imageLightbox">
-        <button class="close-lightbox">&times;</button>
-        <button class="lightbox-nav prev"><i class="fas fa-chevron-left"></i></button>
-        <button class="lightbox-nav next"><i class="fas fa-chevron-right"></i></button>
-        <div class="lightbox-content">
-            <div class="lightbox-img-placeholder">Image Preview</div>
-            <div class="lightbox-caption">
-                <h3 id="lightboxTitle"></h3>
-                <p id="lightboxDesc"></p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Mobile Navigation Toggle -->
-    <button class="mobile-toggle" id="mobileToggle">
-        <i class="fas fa-bars"></i>
-    </button>
+    </footer>
 
     <script src="script.js"></script>
 </body>
